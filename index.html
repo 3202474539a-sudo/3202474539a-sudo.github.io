@@ -8,15 +8,8 @@
         *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
         html,body{background:#000;color:#fff;font-size:14px;line-height:1.4;scroll-behavior:smooth}
 
-        .fade-in {
-          opacity: 0;
-          transform: translateY(30px);
-          transition: all 0.7s ease-out;
-        }
-        .fade-in.visible {
-          opacity: 1;
-          transform: translateY(0);
-        }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.7s ease-out; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
 
         .header{padding:16px;text-align:center;border-bottom:1px solid #333}
         .container{max-width:1100px;margin:0 auto;padding:20px 12px}
@@ -88,7 +81,7 @@
             </div>
         </div>
         <div class="card fade-in">
-            < img src="avt7.jpg" alt="DEEPAL L07">
+            < img src="avtl7.jpg" alt="DEEPAL L07">   <!-- 这里已修正为 avtl7.jpg -->
             <div class="card-body">
                 <h3>DEEPAL L07</h3>
                 <p>Extended range sedan, low fuel consumption, reliable for long-distance transportation.</p >
@@ -144,7 +137,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
-
 fadeElements.forEach(el => observer.observe(el));
 </script>
 
